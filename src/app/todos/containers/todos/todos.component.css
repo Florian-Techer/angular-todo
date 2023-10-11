@@ -1,12 +1,32 @@
 #todos {
   width: 80%;
-  margin: auto;
+  margin: 20px auto 50px;
+  background-color: #0f0f0f;
+  padding: 1.5rem;
+  color: #f8f8f8;
 }
 
 .full_width {
   width: 100%;
 }
 
+.input_container {
+  margin-top: 25px;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
 .todos_completed {
   margin-top: 2rem;
+}
+
+#completed_task_container {
+  margin-top: 50px;
+}
+
+.custom_expansion_panel {
+  background-color: #636363;
+  padding: 0.6rem;
 }

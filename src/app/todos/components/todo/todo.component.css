@@ -1,11 +1,48 @@
 .todo {
-  display: grid;
-  grid-template-columns: 10% 70% 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   line-height: 4rem;
-  background-color: rgba(218, 218, 218, 0.24);
+  background-color: #636363;
   border-radius: 3px;
-  margin-bottom: 0.125rem;
-  padding-left: 0.25rem;
+  margin: 0.6rem 0;
+  padding: 1rem;
+}
+
+.todo:nth-child(4n + 1) {
+  background: linear-gradient(
+    -90deg,
+    rgba(111, 185, 1, 1) 0%,
+    rgb(123, 139, 34) 100%
+  );
+}
+
+.todo:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(1, 185, 95, 1) 0%,
+    rgba(0, 255, 229, 1) 100%
+  );
+}
+
+.todo:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(185, 1, 176, 1) 0%,
+    rgba(255, 0, 149, 1) 100%
+  );
+}
+
+.todo:nth-child(4n + 4) {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 57, 144, 1) 0%,
+    rgba(29, 237, 253, 1) 100%
+  );
+}
+
+.todo_checkbox {
+  margin-right: 2rem;
 }
 .todo-title {
   display: inline-block;
@@ -16,4 +53,7 @@
 }
 .margin {
   margin: 0 10px;
+}
+.delete_icon {
+  color: red;
 }
