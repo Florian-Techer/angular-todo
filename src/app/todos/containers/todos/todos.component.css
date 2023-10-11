@@ -1,0 +1,12 @@
+#todos {
+  width: 80%;
+  margin: auto;
+}
+
+.full_width {
+  width: 100%;
+}
+
+.todos_completed {
+  margin-top: 2rem;
+}

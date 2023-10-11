@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { TodosModule } from './todos/todos.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,9 @@ import { TodosModule } from './todos/todos.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TodosModule
+    TodosModule,
+    BrowserAnimationsModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
