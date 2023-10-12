@@ -1,13 +1,6 @@
 <section id="todos">
-  <mat-form-field class="input_container full_width">
-    <mat-label>Ajouter une tâches</mat-label>
-    <input type="text" matInput />
-  </mat-form-field>
-
-  <app-todo></app-todo>
-
   <div id="completed_task_container">
-    <mat-accordion>
+    <mat-accordion [hidden]="isHidden">
       <mat-expansion-panel class="custom_expansion_panel">
         <mat-expansion-panel-header>
           <mat-panel-title> Terminés </mat-panel-title>
@@ -15,4 +8,11 @@
       </mat-expansion-panel>
     </mat-accordion>
   </div>
+
+  <mat-form-field class="input_container full_width">
+    <mat-label>Ajouter une tâches</mat-label>
+    <input type="text" matInput />
+  </mat-form-field>
+
+  <app-todo></app-todo>
 </section>
